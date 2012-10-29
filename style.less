@@ -1,24 +1,82 @@
 body{
-
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #857B73;
+	background: url(img/body/texture.jpg) 50% 0;
+}
+a{
+	color: #E0D8B1;
+}
+h2.title{
+	font-size: 30px;
+	line-height: 36px;
+	font-family: 'IM Fell French Canon', serif;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	letter-spacing: normal;
+	font-style: italic;
 }
 .header{
 	background: url(img/header/top_texture.jpg) 50% 0 no-repeat black;
 	color: #6A4B44;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	.rt-header{
-			background: url(img/header/header_border.png) 50% 100% repeat-x;
-			color: #AAA;
-			.logo{
-				background: url(../img/logo/logo.png) top left no-repeat;
-				width: 330px;
-				height: 78px;
-			}
+		background: url(img/header/header_border.png) 50% 100% repeat-x;
+		color: #AAA;
+		.rt-container{
+			padding: 19px 0;
 		}
+		.menu-top{
+
+				padding: 11px 0 0 0;
+				li{
+					background: url(img/menus/menu_border.gif) repeat-y;
+				
+					a{
+						white-space: nowrap;
+						display: block;
+						padding: 19px 0 0px 16px;
+						font-size: 13px;
+						z-index: 6 !important;
+						cursor: pointer;
+						font-weight: bold;
+						text-transform: capitalize;
+						width: 104px;
+						color: #E0D8B1;
+						&:hover{
+							em{color:#E0D8B1;}
+							color:#D3A04C
+						}
+						.active{
+
+						}
+						span{
+
+							margin-right: 15px;
+							line-height: 23px;
+							em{
+								font-size: 11px;
+								display: block;
+								text-transform: capitalize;
+								line-height: 15px;
+								-webkit-transition: all 0.5s ease;
+								color: #6A4B44;
+								font-weight: normal;
+								font-style: normal;
+							}
+						}
+					}
+				}
+			}
+	}
 	.rt-top{
 		background: url(img/header/top_border.png) 50% 100% repeat-x;
 		font-size: 11px;
 		.rt-container{
 			padding: 5px 0 9px;
+
 		}
 	}
 }
@@ -27,3 +85,66 @@ body{
 		border-top: 1px solid white;
 		background: url(img/shadow_2.png) 50% 0 repeat-x;
 	}
+
+.shadow{
+	background: url(img/shadow.png) 50% 0 no-repeat;
+}
+.feature{
+
+}
+
+.main{
+	padding: 27px 0 35px;
+}
+
+.post{
+	padding-right: 27px;
+	margin-left: 10px;
+	margin-right: 10px;
+	.post_header{
+		margin-bottom: 22px;
+		.post_rating{
+			padding: 0 0 0 15px;
+			span{
+				color: inherit;
+				display: block;
+				font-weight: bold;
+				font-style: normal;
+				line-height: 19px;
+				margin: 0;
+				padding: 0 8px 0 0;
+			}
+			.post_rating_form{
+				display: block;
+				vertical-align: middle;
+				line-height: 25px;
+				ul.post_ratinglist{
+					background-position: left top;
+					height: 128px;
+					list-style: none outside none;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					position: relative;
+					width: 100px;
+					li{
+						background-position: left -18px;
+						background: url("img/system/transparent_star.png") repeat-x scroll transparent;
+						position: absolute;
+						top: 0;
+						left: 0;
+						text-indent: -1000px;
+						height: 25px;
+						line-height: 25px;
+						outline: none;
+						overflow: hidden;
+						border: none;
+						cursor: pointer;
+						text-align: -webkit-match-parent;
+						list-style: none outside none;
+					}
+				}
+			}
+		}
+	}
+}
